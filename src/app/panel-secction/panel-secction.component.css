@@ -1,0 +1,42 @@
+section#root{
+--bg-color-panel:#ff595e;
+--title-color:#f1faee;
+}
+section#root{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  min-height: 35rem;
+  width: 35rem;
+  border-radius: 15px;
+  color:var(--title-color);
+  text-align: center;
+  padding: 0.1rem;
+  background-color: var(--bg-color-panel);
+  box-sizing: border-box;
+  padding: 1rem;
+}
+.header{
+  font-weight: 900;
+  font-size: 3.5rem;
+  height: fit-content;
+  box-sizing: border-box;
+  width: 100%;
+}
+.header p{
+  text-align: center;
+  margin:auto;
+  display: block;
+}
+.header hr{
+  position: relative;
+  border: none;
+  height: .5rem;
+  opacity: 1;
+  background: #003049;
+  padding: 0 !important;
+}
+.activities{
+  display: flex;
+  flex-direction: column;
+}

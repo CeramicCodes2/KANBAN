@@ -1,0 +1,42 @@
+.box{
+  width: fit-content;
+  position:absolute;
+  top:0%;
+  left:85%;
+  background-color: #ba181b;
+  padding: 1rem;
+  border-radius: 10px;
+  color:#e7ecef;
+  font-weight: 900;
+  font-stretch: expanded;
+  animation:8s animat infinite;
+}
+input[type="color"]{
+  padding:0px;
+  border: 0px solid transparent;
+  margin:0;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 0px solid #e7ecef;
+}
+input[type="color"]:focus{
+  outline: none;
+}
+@keyframes animat{
+  100%{
+    /*z-index: -9999;*/
+    filter: blur(20px);
+    z-index: -999;
+
+  }
+  80%{
+    filter: blur(10px);
+  }
+  75%{
+    filter: blur(5px);
+  }
+  0%{
+    filter: none;
+    z-index: 9999;
+  }
+}

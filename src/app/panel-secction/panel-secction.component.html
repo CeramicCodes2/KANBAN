@@ -1,0 +1,9 @@
+<section id="root">
+  <div class="header">
+  <p>{{name}}</p>
+  <hr>
+  </div>
+  <section class="activities">
+  <activities-component [dataActivity]="activity" *ngFor="let activity of activitys"></activities-component>
+  </section>
+</section>

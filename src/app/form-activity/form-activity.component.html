@@ -1,0 +1,39 @@
+<aside class="box" *ngIf="error">
+  <svg style="margin-bottom: 3px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
+    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5m.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+  </svg> Error se debe registrar la actividad
+</aside>
+<form style="width: 30%;border:1px dashed #495057;border-radius:15px; padding:0.5rem" class="d-flex row justify-content-evenly p-3 m-auto mt-3" (ngSubmit)="f.form.valid && regisActivity(f)" #f="ngForm">
+  <div class="mb-3">
+    <label for="nombre">Nombre de la actividad:</label>
+    <input type="text" class="form-control" name="nombre" id="" ngModel required>
+  </div>
+  <div>
+    <label for="descripcion">Descipcion</label>
+    <input type="text" class="form-control" name="descripcion"  id="">
+  </div>
+  <div class="mb-3">
+    <label for="date">Fecha estimada:</label>
+    <input type="date" class="form-control" name="date" id="" placeholder="tiempo estimado" ngModel required>
+  </div>
+  <div class="mb-3">
+    <label for="clasif">Registrar:</label>
+  <select name="clasif" type="number" ngModel class="form-select">
+    <option value="0"></option>
+    <option value="1">toDo</option>
+    <option value="2">Process</option>
+    <option value="3">Doed</option>
+  </select>
+  </div>
+  <div class="d-flex column justify-content-between">
+    <div class="mb-3">
+      <button type="submit" class="btn btn-success">
+        Hecho
+      </button>
+    </div>
+    <div class="mb-3">
+      <input type="color" name="text_color" id="" ngModel>
+      <input type="color" name="back_color" id="" ngModel>
+    </div>
+  </div>
+</form>

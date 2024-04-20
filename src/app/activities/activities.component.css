@@ -1,0 +1,29 @@
+div.rootActivity{
+  --bg--color:#a8dadc;
+  --color: #1d3557;
+
+}
+.activity{
+  background-color:var(--bg--color);
+  color:var(--color);
+  padding: 1rem;
+  border-radius: 15px;
+  width: 100%;
+  font-weight: 500;
+  font-size: x-large;
+  text-align: center;
+
+
+}
+.hrIconSeparator{
+  rotate: 90deg;
+  position: relative;
+  border: none;
+  height: .5rem;
+  width: auto;
+  opacity: 1;
+  background: #004469;
+  padding: 0 !important;
+
+
+}

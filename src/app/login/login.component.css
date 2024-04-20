@@ -1,0 +1,31 @@
+form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: auto;
+  align-items: center;
+
+}
+form input{
+  padding-left: 0.5rem;
+  height: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid rgb(220, 220, 220);
+  margin-bottom: 0.5rem;
+  width: 50%;
+  height: fit-content;
+  font-size:1.5rem;
+
+}
+form input[type="submit"]{
+  background-color: rgb(18, 18, 86);
+  font-weight: 900;
+  color: aliceblue;
+}
+form input[type="submit"]:hover{
+  background-color:rgb(10, 2, 45);
+  transition:  background-color 4s;
+}
+h1{
+  text-align: center;
+}

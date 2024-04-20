@@ -1,0 +1,15 @@
+section{
+  display: flex;
+  flex-direction: row;
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  background-color: #1d3557;
+  padding: 3rem;
+  overflow: hidden;
+}
+h1{
+  text-align: center;
+}
